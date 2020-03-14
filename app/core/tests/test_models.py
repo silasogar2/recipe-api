@@ -12,10 +12,9 @@ class ModelTests(TestCase):
             email=email,
             password=password
         )
-        
         self.assertEqual(user.email, email)
-        self.assertTrue(user.check_password(password)) 
-        
+        self.assertTrue(user.check_password(password))
+
     def test_new_user_email_normalize(self):
         """Test email """
         email = 'test@silasOGAR.TECH'
